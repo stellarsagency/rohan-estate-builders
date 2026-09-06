@@ -2395,6 +2395,15 @@ ul { list-style: none; }
     .section { padding: 70px 0; }
     .container { padding: 0 16px; }
 
+    /* Projects Page Mobile */
+    #projectsGallery { grid-template-columns: 1fr !important; gap: 16px !important; }
+    .filter-btn { padding: 8px 16px !important; font-size: 0.75rem !important; }
+    .project-item { border-radius: 10px !important; }
+    .project-item div:first-child { height: 200px !important; }
+    .project-item div:last-child { padding: 14px !important; }
+    .project-item h4 { font-size: 0.95rem !important; }
+    .project-item p { font-size: 0.8rem !important; }
+
     .header-container { padding: 0 16px; }
     .logo-img { height: 55px; }
 
@@ -2565,6 +2574,14 @@ ul { list-style: none; }
 
 @media (max-width: 480px) {
     .section { padding: 60px 0; }
+
+    /* Projects Page Mobile */
+    #projectsGallery { grid-template-columns: 1fr !important; gap: 12px !important; }
+    .filter-btn { padding: 6px 12px !important; font-size: 0.7rem !important; }
+    .project-item div:first-child { height: 180px !important; }
+    .project-item div:last-child { padding: 12px !important; }
+    .project-item h4 { font-size: 0.85rem !important; margin-bottom: 4px !important; }
+    .project-item span { font-size: 0.6rem !important; padding: 3px 8px !important; }
 
     .hero-content { padding-top: 100px; }
     .mp-card { padding: 28px 18px; }

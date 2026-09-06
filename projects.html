@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Projects | Rohan Estate & Builder</title>
+    <meta name="description" content="Explore our completed and ongoing projects by Rohan Estate & Builder in Chakwal, Rawalpindi & Islamabad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-text-block">
+                <div class="preloader-title">ROHAN</div>
+                <div class="preloader-sub">ESTATE & BUILDER</div>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo23.png" alt="Rohan Estate & Builder" class="logo-img">
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="locations.html" class="nav-link">Locations</a></li>
+                    <li><a href="why-us.html" class="nav-link">Why Us</a></li>
+                    <li><a href="process.html" class="nav-link">Process</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:03321918097" class="header-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>0332-1918097</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="why-us.html">Why Us</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="tel:03321918097" class="mobile-phone">
+                    <i class="fas fa-phone-alt"></i> 0332-1918097
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="section projects" style="padding-top: 160px;">
+        <div class="container">
+            <div class="services-header" data-animate="fade-up">
+                <span class="section-label">OUR WORK</span>
+                <h2 class="section-title">Our <span class="text-gold">Projects</span></h2>
+                <p class="section-desc">Explore our completed and ongoing real estate projects in Chakwal, Rawalpindi & Islamabad. Every project reflects our commitment to quality, trust, and modern living.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 40px 0;">
+                <button class="filter-btn active" onclick="filterProjects('all')" style="padding: 10px 24px; border-radius: 30px; border: 1px solid rgba(212,175,55,0.3); background: rgba(212,175,55,0.15); color: #d4af37; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('house')" style="padding: 10px 24px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.6); font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">Houses</button>
+                <button class="filter-btn" onclick="filterProjects('plaza')" style="padding: 10px 24px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.6); font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">Plazas & Shops</button>
+                <button class="filter-btn" onclick="filterProjects('plot')" style="padding: 10px 24px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.6); font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">Plots & Land</button>
+                <button class="filter-btn" onclick="filterProjects('construction')" style="padding: 10px 24px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.6); font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">Construction</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 20px;">
+
+                <!-- HOUSE CATEGORY -->
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.23%20AM%20(1).jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.23%20AM.jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.24%20AM%20(1).jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.24%20AM.jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.25%20AM%20(1).jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.25%20AM%20(2).jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.25%20AM.jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.26%20AM%20(1).jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.26%20AM%20(2).jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.26%20AM.jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.27%20AM%20(1).jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.27%20AM%20(2).jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="house" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.39.27%20AM.jpeg" alt="House Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(212,175,55,0.15); color: #d4af37; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">House</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Residential House Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <!-- PLAZA CATEGORY -->
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.33%20AM%20(1).jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.33%20AM.jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.34%20AM%20(1).jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.34%20AM%20(2).jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.34%20AM.jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.35%20AM%20(1).jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.35%20AM.jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.36%20AM%20(1).jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plaza" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.36%20AM.jpeg" alt="Plaza Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(59,130,246,0.15); color: #3b82f6; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plaza</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Commercial Plaza Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Rawalpindi</p>
+                    </div>
+                </div>
+
+                <!-- PLOT CATEGORY -->
+                <div class="project-card" data-category="plot" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.37%20AM%20(1).jpeg" alt="Plot Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(34,197,94,0.15); color: #22c55e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plot</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Plot & Land Development</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Islamabad</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plot" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.37%20AM%20(2).jpeg" alt="Plot Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(34,197,94,0.15); color: #22c55e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plot</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Plot & Land Development</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Islamabad</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plot" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.40.37%20AM.jpeg" alt="Plot Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(34,197,94,0.15); color: #22c55e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plot</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Plot & Land Development</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Islamabad</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plot" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.13%20AM.jpeg" alt="Plot Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(34,197,94,0.15); color: #22c55e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plot</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Plot & Land Development</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Islamabad</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plot" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.15%20AM%20(1).jpeg" alt="Plot Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(34,197,94,0.15); color: #22c55e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plot</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Plot & Land Development</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Islamabad</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="plot" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.15%20AM.jpeg" alt="Plot Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(34,197,94,0.15); color: #22c55e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Plot</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Plot & Land Development</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Islamabad</p>
+                    </div>
+                </div>
+
+                <!-- CONSTRUCTION CATEGORY -->
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.16%20AM.jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.18%20AM.jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.19%20AM%20(1).jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.19%20AM.jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.20%20AM%20(1).jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.20%20AM%20(2).jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.20%20AM%20(3).jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.20%20AM.jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.21%20AM%20(1).jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.21%20AM.jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.22%20AM%20(1).jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.22%20AM%20(2).jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.22%20AM.jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="images/projects/WhatsApp%20Image%202026-09-07%20at%2012.42.23%20AM.jpeg" alt="Construction Project" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 16px;">
+                        <span style="display: inline-block; background: rgba(249,115,22,0.15); color: #f97316; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Construction</span>
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #fff; margin-bottom: 6px;">Construction Project</h4>
+                        <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin: 0;">Chakwal</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Luxury Home" class="cta-bg-img">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <span class="cta-label">START YOUR JOURNEY</span>
+                <h2>Get Your <span class="text-gold">Dream Home</span> Today</h2>
+                <p>Let us help you find the perfect property in Chakwal, Rawalpindi & Islamabad. Your dream home is just a call away.</p>
+                <div class="cta-buttons">
+                    <a href="tel:03321918097" class="btn btn-primary">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light">
+                        <i class="fas fa-envelope"></i>
+                        <span>Send Message</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/logo23.png" alt="Rohan Estate & Builder" class="footer-logo-img">
+                        </a>
+                        <p>Building Dreams. Creating Value. Specialists in Housing Societies — Chakwal, Rawalpindi & Islamabad.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/923321918097" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="services.html">Builders</a></li>
+                            <li><a href="services.html">Construction</a></li>
+                            <li><a href="services.html">Plots Sale</a></li>
+                            <li><a href="services.html">House Sale & Rent</a></li>
+                            <li><a href="services.html">Shop & Plaza Sale / Rent</a></li>
+                            <li><a href="services.html">Property Consultation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact Info</h4>
+                        <div class="fc-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <a href="tel:03321918097">0332-1918097</a>
+                            </div>
+                        </div>
+                        <div class="fc-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/923321918097" target="_blank">WhatsApp: +92 332 1918097</a>
+                        </div>
+                        <div class="fc-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jawad5519@gmail.com">jawad5519@gmail.com</a>
+                        </div>
+                        <div class="fc-item">
+                            <i class="fas fa-location-dot"></i>
+                            <p><strong>Chakwal Office:</strong><br>FF-17 Central Plaza, Barkat Market,<br>New Garden Town, Chakwal</p>
+                        </div>
+                        <div class="fc-item">
+                            <i class="fas fa-location-dot"></i>
+                            <p><strong>Islamabad Office:</strong><br>25 Blue Area, 2nd Floor,<br>New Broadway Pizza, Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Rohan Estate & Builder. All Rights Reserved.</p>
+                <p>Specialists In Housing Societies | Chakwal, Rawalpindi & Islamabad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/923321918097" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function filterProjects(category) {
+            var cards = document.querySelectorAll('.project-card');
+            var buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(function(btn) {
+                btn.style.background = 'rgba(255,255,255,0.03)';
+                btn.style.color = 'rgba(255,255,255,0.6)';
+                btn.style.borderColor = 'rgba(255,255,255,0.15)';
+                btn.classList.remove('active');
+            });
+
+            var activeBtn = document.querySelector('.filter-btn[onclick*="' + category + '"]');
+            if (activeBtn) {
+                activeBtn.style.background = 'rgba(212,175,55,0.15)';
+                activeBtn.style.color = '#d4af37';
+                activeBtn.style.borderColor = 'rgba(212,175,55,0.3)';
+                activeBtn.classList.add('active');
+            }
+
+            cards.forEach(function(card) {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = '';
+                    card.style.animation = 'fadeIn 0.4s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+    </style>
+
+    <script src="js/main.js?v=2"></script>
+</body>
+</html>
