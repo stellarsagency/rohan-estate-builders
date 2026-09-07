@@ -2391,19 +2391,19 @@ ul { list-style: none; }
 @media (max-width: 768px) {
     .nav { display: none; }
     .menu-toggle { display: flex; }
-    .header-phone span { display: none; }
     .section { padding: 70px 0; }
     .container { padding: 0 16px; }
 
-    /* Mobile Header Layout: hamburger left, logo center, call right */
+    /* Mobile Header: hamburger left, logo center, call right */
     .header-container {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
+        display: flex;
         align-items: center;
-        gap: 0;
+        justify-content: space-between;
         padding: 0 16px;
     }
-    .logo { justify-self: center; }
+    .menu-toggle { order: -1; }
+    .logo { order: 0; flex: 1; display: flex; justify-content: center; }
+    .header-actions { order: 1; }
     .logo-img { height: 55px; }
     .header-actions { gap: 10px; }
     .header-phone {
@@ -2580,7 +2580,6 @@ ul { list-style: none; }
     .section { padding: 60px 0; }
 
     .header-container {
-        grid-template-columns: auto 1fr auto;
         padding: 0 12px;
     }
     .logo-img { height: 48px; }
